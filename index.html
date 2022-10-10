@@ -4,13 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet"> 
     <title>Home</title>
 </head>
 <style>
     body{
-     background-image: url('hack.jpg');
+     /*background-image: url('https://user-images.githubusercontent.com/62786689/193422113-cea8df62-7528-47de-afd6-cb643b830431.png'); */
      background-size: cover;
      /*object-fit: contain;*/
+   }
+   h1{
+    color: black;
+    font-family: 'Silkscreen', cursive;
+
+   }
+   #image img{
+    border-radius:80%;
+   }
+   #content{
+    border: 2px solid black;
+    margin:10px;
+   }
+   #content p{
+    text-align: center;
+    padding:50px;
+    font-family: 'Oswald', sans-serif;
    }
    </style>
 <body>
@@ -19,5 +43,14 @@
         Welcome to the Hacktober Home Page!
     </center>
     </h1>
+    <div id="image">
+        <center><img src= "https://pbs.twimg.com/profile_images/1567906020831150081/oJ7mKaaj_400x400.jpg"></center>
+    </div>
+    <div id="content">
+        <p> What's Hacktoberfest ? <br>
+            Hacktoberfest is a month-long celebration of open-source software by DigitalOcean that encourages participation in giving back to the open-source community. Developers get involved by completing pull requests, participating in events, and donating to open source projects.
+
+        </p>
+    </div>
 </body>
 </html>
