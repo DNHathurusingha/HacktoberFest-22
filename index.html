@@ -36,8 +36,51 @@
     padding:50px;
     font-family: 'Oswald', sans-serif;
    }
+     ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(255, 252, 252)(68, 68, 68);
+}
+
+li {
+  float:right;
+  border-right:1px solid #bbb;
+}
+
+li:last-child {
+  border-right: none;
+}
+
+li a {
+  display: block;
+  color: rgb(26, 25, 25);
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+li a:hover:not(.active) {
+  background-color: rgb(45, 100, 218);
+  border-radius: 20px;
+}
+
+.active {
+  background-color: #0476aa;
+  border-radius: 20px;
+}
    </style>
 <body>
+    <ul>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#home" class="active">Home</a></li>
+      </ul>
+      
     <h1>
     <center>
         Welcome to the Hacktober Home Page!
