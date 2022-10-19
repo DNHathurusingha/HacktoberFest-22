@@ -14,9 +14,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="newcss.css">
     <title>Home</title>
 </head>
-<style>
+<style>5
     body{
      /*background-image: url('https://user-images.githubusercontent.com/62786689/193422113-cea8df62-7528-47de-afd6-cb643b830431.png'); */
      background-size: cover;
@@ -31,7 +32,7 @@
     border-radius:80%;
    }
    #content{
-    border: 2px solid black;
+    /* border: 2px solid black; */
     margin:10px;
    }
    #content p{
@@ -58,7 +59,7 @@ li:last-child {
 
 li a {
   display: block;
-  color: rgb(26, 25, 25);
+  color: rgb(255, 255, 255);
   text-align: center;
   padding: 10px 16px;
   text-decoration: none;
@@ -77,7 +78,7 @@ li a:hover:not(.active) {
 }
    </style>
 <body>
-    <ul>
+    <ul class="navi">
         <li><a href="#contact">Contact</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#news">News</a></li>
@@ -85,7 +86,7 @@ li a:hover:not(.active) {
       </ul>
       
     <h1>
-    <center>
+    <center id="head">
         Welcome to the Hacktober Home Page!
     </center>
     </h1>
@@ -93,7 +94,7 @@ li a:hover:not(.active) {
         <center><img src= "https://pbs.twimg.com/profile_images/1567906020831150081/oJ7mKaaj_400x400.jpg"></center>
     </div>
     <div id="content">
-        <p> What's Hacktoberfest ? <br>
+        <p> <b>What's Hacktoberfest ?</b> <br>
             Hacktoberfest is a month-long celebration of open-source software by DigitalOcean that encourages participation in giving back to the open-source community. Developers get involved by completing pull requests, participating in events, and donating to open source projects.
 
         </p>
@@ -105,6 +106,7 @@ li a:hover:not(.active) {
         <i class="fa fa-pinterest-p w3-hover-opacity"></i>
         <i class="fa fa-twitter w3-hover-opacity"></i>
         <i class="fa fa-linkedin w3-hover-opacity"></i>
+        <i class="fa fa-github w3-hover-opacity"></i>
         <p class="w3-medium">Powered by <a href="www.Github.com" target="_blank">Github</a></p>
       </footer>
 </body>
