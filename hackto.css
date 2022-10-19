@@ -4,6 +4,9 @@ body, html {
 	background:black;
 	position: relative;
 }
+
+	/* loging box part */
+
 #login-box {
 	position: absolute;
 	top: 15%;
