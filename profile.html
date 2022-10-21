@@ -3,6 +3,22 @@
 <head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
+  * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
@@ -39,47 +55,76 @@ button:hover, a:hover {
   opacity: 0.7;
 }
 </style>
+  <title>
+    Profile
+  </title>
 </head>
 <body>
 
 <h2 style="text-align:center">User Profile Card</h2>
-
-<div class="card">
-  <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="User Name" style="width:100%">
-  <h1>Your Name</h1>
-  <p class="title">Your Occupation</p>
-  <p>Your University</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
-  </div>
-   <h3>Contact :</h3>
-  <h4>TP: xxx xxxx xxx</h4>
-  <h4>Email : username@mail.com</h4>
-  <h4>www : yourwebsite.com</h4>
-  <marquee>Any message you want to show</marquee>
-  <p><button>Contact</button></p>
-</div>
-  <div class="card">
-    <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="User Name" style="width:100%">
-    <h1>Your Name</h1>
-    <p class="title">Your Occupation</p>
-    <p>Your University</p>
-    <div style="margin: 24px 0;">
-      <a href="#"><i class="fa fa-dribbble"></i></a> 
-      <a href="#"><i class="fa fa-twitter"></i></a>  
-      <a href="#"><i class="fa fa-linkedin"></i></a>  
-      <a href="#"><i class="fa fa-facebook"></i></a> 
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/219/219983.png" alt="User Name" style="width:100%">
+      <h1>Your Name</h1>
+      <p class="title">Your Occupation</p>
+      <p>Your University</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <h3>Contact :</h3>
+      <h4>TP: xxx xxxx xxx</h4>
+      <h4>Email : username@mail.com</h4>
+      <h4>www : yourwebsite.com</h4>
+      <marquee>Any message you want to show</marquee>
+      <p><button>Contact</button></p>
     </div>
-     <h3>Contact :</h3>
-    <h4>TP: xxx xxxx xxx</h4>
-    <h4>Email : username@mail.com</h4>
-    <h4>www : yourwebsite.com</h4>
-    <marquee>Any message you want to show</marquee>
-    <p><button>Contact</button></p>
   </div>
 
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="User Name" style="width:100%">
+      <h1>Your Name</h1>
+      <p class="title">Your Occupation</p>
+      <p>Your University</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <h3>Contact :</h3>
+      <h4>TP: xxx xxxx xxx</h4>
+      <h4>Email : username@mail.com</h4>
+      <h4>www : yourwebsite.com</h4>
+      <marquee>Any message you want to show</marquee>
+      <p><button>Contact</button></p>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="User Name" style="width:100%">
+      <h1>Your Name</h1>
+      <p class="title">Your Occupation</p>
+      <p>Your University</p>
+      <div style="margin: 24px 0;">
+        <a href="#"><i class="fa fa-dribbble"></i></a> 
+        <a href="#"><i class="fa fa-twitter"></i></a>  
+        <a href="#"><i class="fa fa-linkedin"></i></a>  
+        <a href="#"><i class="fa fa-facebook"></i></a> 
+      </div>
+      <h3>Contact :</h3>
+      <h4>TP: xxx xxxx xxx</h4>
+      <h4>Email : username@mail.com</h4>
+      <h4>www : yourwebsite.com</h4>
+      <marquee>Any message you want to show</marquee>
+      <p><button>Contact</button></p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
