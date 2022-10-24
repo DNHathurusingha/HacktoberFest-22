@@ -1,0 +1,222 @@
+*{
+	margin-left: 10px;
+	padding: 10;
+	font-family: verdana;
+	border:0;
+}
+.search .img{
+	width: 100%;
+	min-height: 100vh;
+	padding: 5%;
+	background-image: linear-gradient(rgba(0, 8, 51, 0.9),rgba(0, 8, 51, 0.9)),url(assets/1.jpg);
+	background-position: center;
+	background-size: cover;
+}
+.search-bar{
+	width: 360px;
+	height: 20px;
+	background: #FFF1F1;
+	display: flex;
+	align-items: center;
+	border-radius: 60px;
+	padding: 10px 20px;
+	backdrop-filter:  blur(4px) saturate(180%);
+}
+
+.search-bar input{
+	background: transparent;
+	flex: 1;
+	border: 0;
+	outline: none;
+	padding: 24px 20px;
+	font-size: 16px;
+	color: black;
+}
+
+::placeholder{
+	color: black;
+}
+
+.search-bar .button .img{
+	width: 25px;
+}
+
+.search-bar button{
+	border: 2px;
+	border-radius: 50%;
+	width: 60px;
+	height: 60px;
+	background: transparent;
+	cursor: pointer;
+}
+.navbar{
+	float:right;
+}
+
+.navbar{
+	margin: auto;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar ul li{
+	list-style: none;
+	display:inline-block;
+	margin:0 20px;
+	position: relative;
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #7B68EE;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #ba55d3;
+	position: absolute;
+	left: 0;
+	bottom: -7px;
+	transition: 0.4s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+/* Style the search box inside the navigation bar */
+.topnav input[type=text] {
+  float: center;
+  padding: 6px;
+  border: none;
+  margin-top: 8px;
+  margin-right: 16px;
+  font-size: 17px;
+}
+.topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+.table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  line-height: 48px;
+
+}
+table.center{
+	margin-right: auto;
+	margin-left: auto;
+}
+#update{
+	padding: 10px 20px;
+	color: #CBBDDB;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	border: 1px solid #8F7CEC;
+	margin: auto;
+}
+#update:hover{
+	background: #8f7CEC;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #8F7CEC,0 0 25px #8F7CEC,0 0 58PX #8F7CEC,0 0 100PX #8F7CEC;
+}
+#delete{
+	padding: 10px 20px;
+	color: #CBBDDB;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	border: 1px solid #8F7CEC;
+	margin: auto;
+}
+#delete:hover{
+	background: #8f7CEC;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #8F7CEC,0 0 25px #8F7CEC,0 0 58PX #8F7CEC,0 0 100PX #8F7CEC;
+}
+
+#add{
+	padding: 10px 20px;
+	color: #CBBDDB;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	border: 1px solid #8F7CEC;
+	margin: auto;
+}
+#add:hover{
+	background: #8f7CEC;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #8F7CEC,0 0 25px #8F7CEC,0 0 58PX #8F7CEC,0 0 100PX #8F7CEC;
+}
+#clear{
+	padding: 10px 20px;
+	color: #CBBDDB;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	border: 1px solid #8F7CEC;
+	margin: auto;
+}
+#clear:hover{
+	background: #8f7CEC;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #8F7CEC,0 0 25px #8F7CEC,0 0 58PX #8F7CEC,0 0 100PX #8F7CEC;
+}
+
+#block{
+	padding: 10px 20px;
+	color: #CBBDDB;
+	font-size: 16px;
+	text-decoration: none;
+	text-transform: uppercase;
+	overflow: hidden;
+	transition: 0.5s;
+	letter-spacing: 4px;
+	border: 1px solid #8F7CEC;
+	margin: auto;
+}
+#block:hover{
+	background: #8f7CEC;
+	color: #fff;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #8F7CEC,0 0 25px #8F7CEC,0 0 58PX #8F7CEC,0 0 100PX #8F7CEC;
+}
+
+.form .input_field{
+	margin-bottom: 15px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.form .input_field label{
+	width: 200px;
+	color: #757575;
+	margin-right: 10px;
+	font-size: 14px;
+}
+
+.form .input_field .input{
+	width: 100%;
+	outline: none;
+	border: 1px solid #d5dbd9;
+	font-size: 15px;
+	padding: 8px 10px;
+	border-radius: 3px;
+	transition: all 0.3s ease;
+}
