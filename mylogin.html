@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Phoenix-Airlines</title>
+    <link rel = "icon" href = "assets/3.png" type = "image/x-icon">
+        <link rel="stylesheet" href="login.css" />
+    </head>
+    <body>
+        <div class="container">
+        <div class="card">
+        <div class="inner-box" id="card">
+         <div class="card-front">
+           <div class ="regform"></div>
+            <div class="main">
+                <h2 class="reg">REGISTATION FORM</h2>
+                <form class="form">
+                   <div id="name">
+                        
+                        <h4 class="name">Name</h4>
+                        <input class="firstname" type="text" placeholder="First Name" required onkeyup = "validatename();" name="first-name"><br>
+                        <!-- <label class="firstlabe">first name</label>-->
+                        <input class="lastname" type="text" placeholder="Last Name" required onkeyup = "validatename();" name="last-name">
+                         <!--<label class="lastlabe">last name</label>-->
+                    </div>
+                    <h4 class="name">Address</h4>
+                    <input class="address" type="text" name="address">
+                    <div class="inputfield">
+                    <i class="fas fa-user"></i>
+                    <h4 class="name">Date Of Birth</h4>
+                    <input class="date" placeholder="date" type="date" />
+                </div>
+
+              <div class="form-group">
+                <h4 class="name">NIC</h4>   
+                    <input class="form-control" type="text" name="NIC" id = "NIC" required onkeyup = "validateNIC();" maxlength=14  />  
+                    <span id="message1"></span>
+                        
+            </div>
+              <h4 class="name">Email</h4>
+              <input class="email" typr="text" name="email">
+
+              <h4 class="name">Phone Number</h4>
+              <input class="number" type="tel" name="phone">
+              
+
+            <div class="input-field">
+                
+                <h4 class="name">Password</h4>
+                <input class="password" placeholder="Password" type="password" />
+                <h4 class="name">Re-Enter Password</h4>
+                <input class="repassword" placeholder="RePassword" type="password"/>
+            </div>
+            <h3 id="staff"><b><u>For staff account</u></b></h3><br>
+            <label for="myRadioId" class="radio">
+                <input class="radio__input" name="myRadioField" id="myRadioId" type="radio">
+                <div class="radio__radio"></div> 
+                <h4>Grade 1 staff </h4>
+                
+            </label>
+            <label for="myRadioId" class="radio">
+                <input class="radio__input" name="myRadioField" id="myRadioId" type="radio">
+                <div class="radio__radio"></div> 
+                <h4>Grade 2 staff </h4> 
+            </label>
+            <label for="myRadioId" class="radio">
+                <input class="radio__input" name="myRadioField" id="myRadioId" type="radio">
+                <div class="radio__radio"></div> 
+                <h4>Not a staff member</h4> 
+            
+            </label><br>
+            <button class="btn1" type="submit"><h2>Submit</h2></button></a>
+            <button class="btn2" type="reset"><h2>Reset</h2></button></a>
+           </form>
+        </div>
+        </div>
+        </div>
+    </div>
+    </div>
+    </body>    
+</html>
