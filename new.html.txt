@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Phoenix-Airlines</title>
+	<link rel = "icon" href = "assets/3.png" type = "image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="css/staff1.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		  background-image: url(assets/600.jpg);
+		 background-repeat: no-repeat; 
+		 background-attachment: fixed;
+		  background-size: cover;
+		  width: 100%;
+		}
+		</style>
+</head>
+<body>
+		<img src="assets/logo.png" width="150px" height="100px">
+	<div class="navbar">
+		<div class="Search">
+			<form action="" class="search-bar">
+				<input type="text" placeholder="Search Anything..." name="q">
+				<button type="submit"><img src="assets/search.png" width="20px" height="20px" ></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="ticketing.html">Ticketing</a></li>
+			<li><a href="flights.html">Flights</a></li>
+			<li><a href="useraccounts.html">User Accounts</a></li>
+			<li><a href="Messeges.html">Messeges</a></li>
+		</ul>
+		<img src="assets/pro.png" width="40px" height="40px">
+</div>
+	<br><br><br>
+	<div class="container"><h1><font color="#7B68EE">
+							<span>T</span>
+							<span>I</span>
+							<span>C</span>
+							<span>K</span>
+							<span>E</span>
+							<span>T</span>
+							<span>I</span>
+							<span>N</span>
+							<span>G</span>
+						</font></h1>
+		</div>
+
+	<br><br>
+  	Search by TicketID<br><br>
+  	<div class="Search">
+			<form action="" class="search-bar">
+				<input type="text" placeholder="Search Anything..." name="q">
+				<button type="submit"><img src="assets/search.png" width="20px" height="20px" ></button>
+			</form>
+		
+
+</div>
