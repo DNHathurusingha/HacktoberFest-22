@@ -1,0 +1,62 @@
+
+        <!-- Cases Panel Start -->
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-4">
+                <div class="col">
+                    <div class="casebox bg-light rounded d-flex align-items-center justify-content-between p-4" style="padding-left: 200px;">
+                        <a href="">
+                            <p class="cases mb-2">Flight Information</p>
+                        </a>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="casebox bg-light rounded d-flex align-items-center justify-content-between p-4">
+                        <a href="">
+                            <p class="cases mb-2">Approval Request</p>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-4 px-4">
+            <div class="row g-4">
+                <div class="col">
+                    <div class="casebox bg-light rounded d-flex align-items-center justify-content-between p-4">
+                        <a href="">
+                            <p class="cases mb-2">Staff Information</p>
+                        </a>    
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="casebox bg-light rounded d-flex align-items-center justify-content-between p-4">
+                        <a href="">
+                            <p class="cases mb-2">Analyisis</p>
+                        </a>    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cases Panel End -->
+    </div>
+</div>
+<script>
+
+(function ($) {
+    "use strict";
+    var fullHeight = function () {
+        $(".js-fullheight").css("height", $(window).height());
+        $(window).resize(function () {
+            $(".js-fullheight").css("height", $(window).height());
+        });
+    };
+    fullHeight();
+    $("#sidebarCollapse").on("click", function () {
+        $("#sidebar").toggleClass("active");
+    });
+})(jQuery);
+
+
+</script>
+
+</body>
+</html>  
