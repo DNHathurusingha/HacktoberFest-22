@@ -1,0 +1,16 @@
+/* css for headings  */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+/* css for body text */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    color: #000000;
+    font-size: 14px;
+    line-height: 24px;
+}
