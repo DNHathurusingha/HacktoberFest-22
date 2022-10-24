@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<style>
+body {
+    margin: 0;
+			padding: 0;
+		  background-image: url(assets/6.jpg);
+		 background-repeat: no-repeat; 
+		 background-attachment: fixed;
+		  background-size: cover;
+		  width: 100%;
+}
+a {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+    color:black;
+}
+a:hover,
+a:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+button {
+    -webkit-transition: 0.3s all ease;
+    -o-transition: 0.3s all ease;
+    transition: 0.3s all ease;
+}
+button:hover,
+button:focus {
+    text-decoration: none !important;
+    outline: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5 {
+    line-height: 1.5;
+    font-weight: 400;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #000;
+}
+.ftco-section {
+    padding: 7em 0;
+}
+.ftco-no-pt {
+    padding-top: 0;
+}
+.ftco-no-pb {
+    padding-bottom: 0;
+}
+.heading-section {
+    font-size: 28px;
+    color: #000;
+}
+.heading-section small {
+    font-size: 18px;
+}
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.wrapper {
+    width: 100%;
+}
+#sidebar {
+    min-width: 290px;
+    max-width: 290px;
+    background: #2f2c679c;
+    color: rgba(229, 243, 243, 0.349);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+}
+#sidebar .h6 {
+    color: rgb(215, 193, 208);
+}
+#sidebar.active {
+    margin-left: -270px;
+}
+#sidebar h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+    font-size: 30px;
+}
+#sidebar h1 .logo {
+    color: #fff;
+}
+#sidebar h1 .logo span {
+    font-size: 14px;
+    color: #799ba2;
+    display: block;
+}
+#sidebar ul.components {
+    padding: 0;
+}
+#sidebar ul li {
+    font-size: 16px;
+}
+#sidebar ul li > ul {
+    margin-left: 10px;
+}
+#sidebar ul li > ul li {
+    font-size: 14px;
+}
+#sidebar ul li a {
+    padding: 10px 0;
+    display: block;
+    color: rgba(31, 3, 25, 0.893);
+    border-bottom: 1px solid rgb(67, 16, 65);
+}
+#sidebar ul li a span {
+    color: #120215;
+}
+#sidebar ul li a:hover {
+    color: rgba(41, 1, 37, 0.6);
+}
+#sidebar ul li.active > a {
+    background: transparent;
+    color: #fff;
+}
+@media (max-width: 991.98px) {
+    #sidebar {
+        margin-left: -270px;
+    }
+    #sidebar.active {
+        margin-left: 0;
+    }
+}
+#sidebar .custom-menu {
+    display: inline-block;
+    position: absolute;
+    top: 20px;
+    right: 0;
+    margin-right: -20px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+@media (prefers-reduced-motion: reduce) {
+    #sidebar .custom-menu {
+        -webkit-transition: none;
+        -o-transition: none;
+        transition: none;
+    }
+}
+#sidebar .custom-menu .btn {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: relative;
+}
+#sidebar .custom-menu .btn i {
+    margin-right: -40px;
+    font-size: 14px;
+}
+#sidebar .custom-menu .btn.btn-primary {
+    background: transparent;
+    border-color: transparent;
+}
+#sidebar .custom-menu .btn.btn-primary:after {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: "";
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    background: #2f2c679c;
+    border-radius: 10px;
+}
+#sidebar .custom-menu .btn.btn-primary:hover,
+#sidebar .custom-menu .btn.btn-primary:focus {
+    background: transparent !important;
+    border-color: transparent !important;
+}
+a[data-toggle="collapse"] {
+    position: relative;
+}
+.dropdown-toggle::after {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+@media (max-width: 991.98px) {
+    #sidebarCollapse span {
+        display: none;
+    }
+}
+#content {
+    width: 100%;
+    padding: 0;
+    min-height: 100vh;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.bg-custom-1 {
+  background-color: #85144b;
+}
+
+.bg-custom-2 {
+background-image: linear-gradient(15deg, #73237a 0%, #80d0c7 100%);
+}
+.btn:hover{
+    color:#fff;
+}
+.casebox{
+  box-shadow: 10px 15px 15px rgba(0, 0, 0, 0.4);
+  min-height: 100px;
+  background-color: rgb(177, 142, 162) !important;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.input-text:focus{
+       
+  
+    box-shadow: 0px 0px 0px;
+    border-color:#46f8cf39;
+    outline: 0px;
+}
+
+.form-control {
+    border: 1px solid #f8c146;
+}
+.btn.btn-primary {
+    background: #612e80;
+    border-color: #a12ec1;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:focus {
+    background: #a549e3 !important;
+    border-color: #6b2c8b !important;
+}
+.footer p {
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+}
+.form-control {
+    height: 40px !important;
+    background: rgb(139, 178, 218);
+    color: #000;
+    font-size: 13px;
+    border-radius: 4px;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: transparent;
+}
+.form-control:focus,
+.form-control:active {
+    border-color: #000;
+}
+.form-control::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-control::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-control:-ms-input-placeholder {
+    /* IE 10+ */
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-control:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgba(236, 14, 66, 0.961);
+}
+.subscribe-form .form-control {
+    background: #7e4e94;
+}
+</style>
+
+</head>
+<body>
+<div class="wrapper d-flex align-items-stretch">
+    <nav id="sidebar">
+        <div class="custom-menu">
+            <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                <i class="fa fa-bars"></i>
+                <span class="sr-only">Toggle Menu</span>
+            </button>
+        </div>
+        <div class="p-4">
+            <h6 style="font-weight: bold;"><a href="#" class="logo" style="color:black; padding-bottom: 20px;">ADMIN DASHBOARD</h6>
+            <div class="row" style="padding-top: 10px;">
+                <div class="col">
+                    <h1>
+                        <a href="#" class="logo">Phoenix  Airline</a>
+                    </h1>
+                </div>
+                <div class="col">
+                    <img src="assets/logo.png" alt="" style="width: 85px; padding-top: 10px;">
+                </div>
+            </div>
+            <ul class="list-unstyled components mb-5">
+                <li class="active">
+                    <a href="#"><span class="fa fa-home mr-3"></span>Dashboard</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-user mr-3"></span> Staff-Grade 1</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-user mr-3"></span> Staff-Grade 2</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-sticky-note mr-3"></span> Users</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-cogs mr-3"></span> Settings</a>
+                </li>
+                <li>
+                    <a href="#"><span class="fa fa-suitcase mr-3"></span> About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Content  -->
+    <div id="content" class="p-4 p-md-5 pt-5">
+
+        <!-- Navbar Start -->
+        <div class="row">
+            <div class="col-lg-6 mx-auto">
+                <form action="" style="padding-top: 6px;">
+                  <div class="p-1 rounded rounded-pill shadow-sm mb-4" style="background-color:rgb(165, 133, 164);">
+                    <div class="input-group">
+                      <input type="search" placeholder="What're you searching for?" aria-describedby="button-addon1" class="form-control rounded rounded-pill" style="background-color:black">
+                      <div class="input-group-append">
+                        <button id="button-addon1" type="submit" class="btn btn-link text-primary"><i class="fa fa-search"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+            </div>
+            <div class="col-lg-1 bg-none">
+                <div class="btn-group" style="float: right !important; padding-right: 30px;">
+                    <button class="btn btn-lg dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color: rgb(234, 213, 239);">
+                        <img src="pro-pic.png" alt="" style="width: 45px; border-radius: 55px;" style="background-color:black;">
+                    </button>
+                    <div class="dropdown-menu">
+                        <a href="" class="dropdown-item">Profile</a>
+                        <a href="" class="dropdown-item">Log Out</a>
+                    </div>
+                </div>
+            </div>
+          </div>
+            <!-- Navbar End -->
