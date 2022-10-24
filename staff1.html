@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Phoenix-Airlines</title>
+	<link rel = "icon" href = "assets/3.png" type = "image/x-icon">
+
+	<link rel="stylesheet" type="text/css" href="css/staff1.css">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+		  background-image: url(assets/600.jpg);
+		 background-repeat: no-repeat; 
+		 background-attachment: fixed;
+		  background-size: cover;
+		  width: 100%;
+		}
+		</style>
+</head>
+<body>
+		<img src="assets/logo.png" width="150px" height="100px">
+	<div class="navbar">
+		<div class="Search">
+			<form action="" class="search-bar">
+				<input type="text" placeholder="Search Anything..." name="q">
+				<button type="submit"><img src="assets/search.png" width="20px" height="20px" ></button>
+			</form>
+		</div>
+		<ul>
+			<li><a href="ticketing.html">Ticketing</a></li>
+			<li><a href="flights.html">Flights</a></li>
+			<li><a href="useraccounts.html">User Accounts</a></li>
+			<li><a href="Messeges.html">Messeges</a></li>
+		</ul>
+		<img src="assets/pro.png" width="40px" height="40px">
+</div>
+	<br><br><br>
+	<div class="container"><h1><font color="#7B68EE">
+							<span>T</span>
+							<span>I</span>
+							<span>C</span>
+							<span>K</span>
+							<span>E</span>
+							<span>T</span>
+							<span>I</span>
+							<span>N</span>
+							<span>G</span>
+						</font></h1>
+		</div>
+
+	<br><br>
+  	Search by TicketID<br><br>
+  	<div class="Search">
+			<form action="" class="search-bar">
+				<input type="text" placeholder="Search Anything..." name="q">
+				<button type="submit"><img src="assets/search.png" width="20px" height="20px" ></button>
+			</form>
+		
+
+</div>
+<br><br>
+<form>
+<table class="center table table-responsive" bgcolor="black">
+	
+  <tr bgcolor="#d3d3d3">
+  	<th></th>
+    <th>TicketID</th>
+    <th>FlightID</th>
+    <th>Destination</th>
+    <th>Date</th>
+    <th>Passenger Details</th>
+  </tr>
+  <tr bgcolor="white">
+  	<td><div class="radio">
+  		<label><input type="radio" name="select" placeholder="" style="background-color: transparent;"></label></div> </td>
+  		<td><label><input type="text" name="tId" placeholder="Ticket ID" style="background-color: transparent;"></label></div> </td>
+  	<td><input type="text" name="fId" placeholder="Flight ID" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="des" placeholder="Destination" style="background-color: transparent;"> </td>
+  	<td><input type="Date" name="date" placeholder="Date" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="pD" placeholder="Passenger details" style="background-color: transparent;"> </td>
+  </tr>
+  </table><br><br><br><center>
+<div class="button-form">
+  	<a id="update"href="#">update</a>
+  	<a id="delete"href="#">delete</a></center>
+  </div>
+</form>
+<br><br><br><br><br><br>
+<div class="container"><h1><font color="#7B68EE">
+							<span>F</span>
+							<span>L</span>
+							<span>I</span>
+							<span>G</span>
+							<span>H</span>
+							<span>T</span>
+							<span>S</span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span>M</span>
+							<span>A</span>
+							<span>N</span>
+							<span>A</span>
+							<span>G</span>
+							<span>E</span>
+							<span>M</span>
+							<span>E</span>
+							<span>N</span>
+							<span>T</span>
+						</font></h1>
+		</div><br><br>
+		Add Flight Details
+		<br><br><br>
+		<div class="form">
+			<div class="input_field">
+				<label>FlightID</label>
+				<input type="text" class="input">
+			</div>
+			<div class="input_field">
+				<label>Date Fly</label>
+				<input type="text" class="input">
+			</div>
+			
+			<div class="input_field">
+				<label>Starting Point</label>
+				<input type="text" class="input">
+			</div>
+			<div class="input_field">
+				<label>Destination</label>
+				<input type="text" class="input">
+			</div>
+			<div class="button-form">
+  	<center><a id="add"href="#">add</a>
+  	<a id="clear"href="#">clear</a></center>
+  </div>
+		</div><br><br><br><br>
+	
+  	Search by FlightID<br><br>
+  	<div class="Search">
+			<form action="" class="search-bar">
+				<input type="text" placeholder="Search Anything..." name="q">
+				<button type="submit"><img src="assets/search.png" width="20px" height="20px" ></button>
+			</form>
+		
+</div>
+<br><br>
+<form>
+<table class="center table table-responsive" bgcolor="black">
+	
+  <tr bgcolor="#d3d3d3">
+  	<th></th>
+    <th>FlightID</th>
+    <th>Date</th>
+    <th>Starting Point</th>
+    <th>Destination</th>
+    
+  </tr>
+  <tr bgcolor="white">
+  	<td><div class="radio">
+  		<label><input type="radio" name="select" placeholder="" style="background-color: transparent;"></label></div> </td>
+  		<td><label><input type="text" name="fId" placeholder="Flight ID" style="background-color: transparent;"></label></div> </td>
+  	<td><input type="Date" name="date" placeholder="Date" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="Starting" placeholder="Starting Point" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="des" placeholder="Destination" style="background-color: transparent;"> </td>
+  	
+  </tr>
+  </table><br><br><br><center>
+<div class="button-form">
+  	<a id="update"href="#">update</a>
+  	<a id="delete"href="#">delete</a></center>
+  </div>
+</form>
+<br><br><br><br><br><br>
+<div class="container"><h1><font color="#7B68EE">
+							<span>U</span>
+							<span>S</span>
+							<span>E</span>
+							<span>R</span>
+							<span></span>
+							<span></span>
+							<span></span>
+							<span>M</span>
+							<span>A</span>
+							<span>N</span>
+							<span>A</span>
+							<span>G</span>
+							<span>E</span>
+							<span>M</span>
+							<span>E</span>
+							<span>N</span>
+							<span>T</span>
+						</font></h1>
+		</div><br><br>
+
+  	Search by UserID<br><br>
+  	<div class="Search">
+			<form action="" class="search-bar">
+				<input type="text" placeholder="Search Anything..." name="q">
+				<button type="submit"><img src="assets/search.png" width="20px" height="20px" ></button>
+			</form>
+		</div>
+<br><br>
+<form>
+<table class="center table table-responsive" bgcolor="black">
+	
+  <tr bgcolor="#d3d3d3">
+  	<th></th>
+    <th>UserID</th>
+    <th>Name</th>
+    <th>Telephone No</th>
+    <th>Passport No</th>
+    <th>Address</th>
+    <th>Flight Details</th>
+  </tr>
+  <tr bgcolor="white">
+  	<td><div class="radio">
+  		<label><input type="radio" name="select" placeholder="" style="background-color: transparent;"></label></div> </td>
+  		<td><label><input type="text" name="UId" placeholder="User ID" style="background-color: transparent;"></label></div> </td>
+  	<td><input type="text" name="name" placeholder="Name" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="tele" placeholder="Telephone No" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="pno" placeholder="Passport No" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="address" placeholder="Address" style="background-color: transparent;"> </td>
+  	<td><input type="text" name="fd" placeholder="Flight Details" style="background-color: transparent;"> </td>
+  </tr>
+  </table><br><br><br><center>
+<div class="button-form">
+  	<a id="update"href="#">update</a>
+  	<a id="block"href="#">block user</a></center>
+  </div>
+</form>
+<br><br><br><br><br><br><br>
+</body>
+</html>
