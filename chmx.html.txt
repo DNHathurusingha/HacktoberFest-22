@@ -1,0 +1,255 @@
+<html>
+<head>
+	<title> Progress and Info </title>
+	<meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+
+    	*{
+	margin: 0;
+	padding: 0;
+	border:0;
+}
+
+body{
+	margin: 0;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(1.jpg);
+	background-repeat: no-repeat;
+	background-size:cover;
+
+	background-attachment: fixed;
+	background-position: center;
+
+}
+
+.navbar{float:right;}
+.navbar{
+	margin: auto;
+	padding: 20px 10px;
+	display: flex;
+	justify-content: space-between;
+}
+.navbar ul li{
+	list-style: none;
+	display: inline-block;
+	margin:0 20px;
+	position: relative;
+
+}
+.navbar ul li a{
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after{
+	content: '';
+	height: 3px;
+	width: 0;
+	background: #009688;
+	position: absolute;
+	left: 0;
+	bottom: -7;
+	transition: 0.4s;
+}
+.navbar ul li:hover::after{
+	width: 100%;
+}
+
+.content {float: left}
+.content {position: absolute;
+top: 30px;
+right:-50px;}
+.content {
+width: 100%;
+color:#fff;
+}
+.content p{
+	padding: 1px;
+	font-size: 15px;
+	margin:20px 20px ;
+	font-weight:100;
+	line-height:25px;
+	font-style: justify;
+	position: absolute;
+
+
+}
+
+
+ section {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      /* TAKE OBJECT FAR FROM PERSPECTIVE VIEW */
+      .card {
+        /* background-color: #0000aa; */
+        perspective: 1000px;
+        margin: 1rem;
+      }
+
+      /* SET SAME COLUMN AND ROW FOR BOTH CARD */
+      .card-container {
+        width: 250px;
+        height: 320px;
+        background: none;
+        border-radius: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+		transition: all 1s ease;
+		transform-style: preserve-3d;
+      }
+      .card-front {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+  		backface-visibility: hidden;
+  		overflow: hidden;
+  		background: #33D5FF;
+  		color: #000;
+  		text-align: center;
+        border-radius: 10px;
+        grid-area: 1 / 1;
+        transform: rotateY(180deg);
+      }
+      .card-back {
+      width: 100%;
+  		height: 100%;
+  		border-radius: 10px;
+  		backface-visibility: hidden;
+  		overflow: hidden;
+  		background-image: url('42.jpg');
+      background-size:cover;
+  		color: #333;
+  		text-align: center;
+        grid-area: 1 / 1;
+      }
+
+      /* FIX CARD IMAGES WIDTH */
+      .card-container img {
+        width: 15rem;
+      }
+
+      .card:hover .card-container {
+        transform: rotateY(180deg);
+      }
+    .main {
+        line-height: normal;
+        font-size: auto;
+    }
+
+    </style>
+</head>
+<body>
+<div class="navbar">
+	<ul>
+		<li><a href="">Overview</a></li>
+		<li><a href="">Progress and info</a></li>
+		<li><a href="">Ideas</a></li>
+	</ul>
+</div>
+<div class="content">
+	 <h1>TARGETS AND INDICATORS</h1>
+    <section>
+
+      <!-- CARD - 1 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+            <h2>INDICATORS</h2><p>6.1.1 Proportion of population using safely managed drinking water services.</p>
+          </div>
+          <div class="card-back">
+            <h2>TARGETS 6.1</h2><p>By 2030,achieve universal and equitable access to safe and affordable drinking water for all.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CARD - 2 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+           <h2>INDICATORS</h2><p>6.2.1 Proportion of population using safely managed sanitation services,including a hand-washing facility with soap and water.</p> 
+          </div>
+          <div class="card-back">
+       <h2>TARGETS 6.2</h2><p>By 2030,achieve access to adequate and equitable sanitation and hygiene for all and end open defecation,paying special attention to the needs of women and girls and those in vulnerable situations.</p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - 3 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+            <h2>INDICATORS</h2><p>6.3.1 Proportion of domestic and industrial wastewater flows safely treated.
+              <br> 6.3.2 proportion of bodies of water with good ambient water quality.</p>
+          </div>
+          <div class="card-back">
+            <h2>TARGETS 6.3</h2><p>By 2030,improve water quality by reducing pollution,eliminating dumping and minimizing release of hazardous chemicals and materials,halving the proportion of untreated wastewater and substantially increasing recycling and safe reuse globally.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - 4 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+           <h2>INDICATORS</h2><p>6.4.1 change in water-use efficiency over time
+          <br>6.4.2 level of water stress:freshwater withdrawal as a proportion of available freshwater resources</p>
+          </div>
+          <div class="card-back">
+          <h2>TARGETS 6.4</h2><p>By 2030,substantially increase water-use efficiency across all sectors and ensure sustainable withdrawals and supply of freshwater to address water scarcity and subsantially reduce the number of people suffering from water scarcity. 
+          </p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - 5 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+         <h2>INDICATORS</h2><p>6.5.1 degree of integrated water resources management implementation(0-100)
+            <br>6.5.2 proportion of transboundary basin area with an operational arrangement for water cooperation</p>
+          </div>
+          <div class="card-back">
+           <h2>TARGETS 6.5</h2><p>By 2030,implement intergrated water resources management at all levels,including through trannsboundary cooperation as appropriate
+           </p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - 6 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+           <h2>INDICATORS</h2><p>6.6.1 Change in the extent of water-related ecosystems over time</p>
+          </div>
+          <div class="card-back">
+          <h2>TARGETS 6.6</h2><p>By 2020, Protect and restore water-related ecosystems, including mountains, forests, wetlands, rivers, aquifers and lakes.</p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - 7 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+           <h2>INDICATORS</h2><p>6.a.1 Amount of water- and sanitation-related official development assistance that is part of a government-coordinated spending plan</p>
+          </div>
+          <div class="card-back">
+            <h2>TARGETS 6.a</h2><p>By 2030, expand international cooperation and capacity-building support to developing countries in water and sanitation-related activities and programmes, including water harvesting, desalination, water efficiency, wastewater treatment, recycling and reuse technologies.</p>
+          </div>
+        </div>
+      </div>
+      <!-- CARD - 8 -->
+      <div class="card">
+        <div class="card-container">
+          <div class="card-front">
+            <h2>INDICATORS</h2><p>6.b.1 Proportion of local administrative units with established and operational policies and procedures for participation of local communities in water and sanitation management</p>
+          </div>
+          <div class="card-back">
+           <h2>TARGETS 6.b</h2><p>Support and strengthen the participation of local communities in improving water and sanitation management</p>
+         </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>
