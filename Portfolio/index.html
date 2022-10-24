@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- javascript inline to change the name id color each time page refreshed-->
+    <script>
+        function changeColor() {
+            var color = ["#FF0000", "#FF7F00", "#FFFF00", "#00FF00", "#0000FF", "#4B0082", "#9400D3"];
+            var random = Math.floor(Math.random() * color.length);
+            document.getElementById("name").style.color = color[random];
+        }
+    </script>
+
+</head>
+
+<body onclick="changeColor()">
+    <h1>Portfolio</h1>
+    <!-- name and intro as a div -->
+    <div>
+        <h2>Hi, I'm <span id="name">Tom</span></h2>
+        <p id="intro">
+            I am a web developer and I love to code. I also play the guitar and I love to travel.
+        </p>
+    </div>
+    <!-- show skills in tabular form with ratings like 5star -->
+    <div>
+        <h2>Skills</h2>
+        <table>
+            <tr>
+                <th>Skill</th>
+                <th>Rating</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td id="html"></td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>⭐⭐⭐⭐⭐</td>
+                <td id="css"></td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>⭐⭐⭐⭐</td>
+                <td id="js"></td>
+            </tr>
+            <tr>
+                <td>Python</td>
+                <td>⭐⭐⭐</td>
+                <td id="python"></td>
+            </tr>
+        </table>
+    </div>
+    <!-- show projects in tabular form with links -->
+    <div>
+        <h2>Projects</h2>
+        <table>
+            <tr>
+                <th>Project</th>
+                <th>Link</th>
+            </tr>
+            <tr>
+                <td>Project 1</td>
+                <td><a href="https://www.google.com">Link</a></td>
+            </tr>
+            <tr>
+                <td>Project 2</td>
+                <td><a href="https://www.twitter.com">Link</a></td>
+            </tr>
+            <tr>
+                <td>Project 3</td>
+                <td><a href="https://www.hotstar.com">Link</a></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- contact me -->
+    <div>
+        <h2>Contact Me</h2>
+        <p>Feel free to contact me at facebook.com/tom</p>
+    </div>
+
+</body>
+
+</html>
