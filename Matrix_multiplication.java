@@ -23,12 +23,14 @@ public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 		
   //size of 1st array
+                System.out.println("Enter the size of 1st array i.e row & col");
 		int r1 = scn.nextInt();
 		int c1 = scn.nextInt();
 		
 		int [][] oneArray = new int[r1][c1]; 
 		
   //input of 1st array
+  		System.out.println("Enter the element of 1st array");
 		for (int i = 0; i < oneArray.length; i++) {
 			for (int j = 0; j < oneArray[0].length; j++) {
 				
@@ -39,12 +41,14 @@ public static void main(String[] args) {
 		
   
     //size of 2nd array
+    		System.out.println("Enter the size of 2nd array i.e row & col");
 		int r2 = scn.nextInt();
 		int c2 = scn.nextInt();
 		
 		int [][] twoArray = new int[r2][c2]; 
 		
   //input of 2nd array
+  		System.out.println("Enter the element of 2nd array");
 		for (int i = 0; i < twoArray.length; i++) {
 			for (int j = 0; j < twoArray[0].length; j++) {
 				
