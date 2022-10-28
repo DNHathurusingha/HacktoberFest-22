@@ -1,3 +1,4 @@
+/* boddy */
 body, html {
 	height: 100%;
 	background-repeat: no-repeat;    /*background-image: linear-gradient(rgb(12, 97, 33),rgb(104, 145, 162));*/
@@ -19,6 +20,8 @@ body, html {
 	padding: 20px;
 	z-index: 9999;
 }
+
+/* 	logo css */
 #login-box .logo .logo-caption {
 	font-family: 'Poiret One', cursive;
 	color: white;
@@ -36,6 +39,11 @@ body, html {
 	background: rgb(98, 96, 96);
 	border: 0px;
 	color: white;
+/* 	color:blue; */
+/* 	color:orange; */
+/* 	color:green; */
+/* 	color:red; */
+	
 }
 #login-box .controls input:focus {
 	box-shadow: none;
@@ -74,4 +82,3 @@ body, html {
   	z-index:1;
 }
 
-/* end */
