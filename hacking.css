@@ -36,6 +36,11 @@ body, html {
 	background: rgb(98, 96, 96);
 	border: 0px;
 	color: white;
+/* 	color:blue; */
+/* 	color:orange; */
+/* 	color:green; */
+/* 	color:red; */
+	
 }
 #login-box .controls input:focus {
 	box-shadow: none;
