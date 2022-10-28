@@ -1,0 +1,23 @@
+
+body {
+    background-image: url(../Login.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.singn-up a{
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 45px;
+   
+}
+
+.singn-up a:hover{
+    text-decoration: underline;
+
+}
