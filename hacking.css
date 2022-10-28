@@ -19,6 +19,8 @@ body, html {
 	padding: 20px;
 	z-index: 9999;
 }
+
+/* 	logo css */
 #login-box .logo .logo-caption {
 	font-family: 'Poiret One', cursive;
 	color: white;
