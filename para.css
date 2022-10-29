@@ -1,0 +1,21 @@
+body {
+    background-image: url(../StaffImg/early-morning-flights.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: montserrat;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.center {
+    position: absolute;
+    top:55%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 12px;
+}
+
